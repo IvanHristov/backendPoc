@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mutation createContact 1`] = `
+Object {
+  "data": Object {
+    "createContact": Object {
+      "email": "ih95@gmc",
+      "first_name": "ivan",
+      "id": "1",
+      "last_name": "hr",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`mutation deleteContact 1`] = `
+Object {
+  "data": Object {
+    "deleteContact": Array [
+      Object {
+        "email": "ih95@gmail.com",
+        "first_name": "ivan",
+        "id": "1",
+        "last_name": "hristov",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`mutation updateContact 1`] = `
+Object {
+  "data": Object {
+    "updateContact": Array [
+      Object {
+        "email": "ih95@gmail.com",
+        "first_name": "ivan",
+        "id": "1",
+        "last_name": "hristov",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

@@ -1,0 +1,24 @@
+{
+  "name": "epra",
+  "version": "1.0.0",
+  "description": "backend POC",
+  "main": "index.js",
+  "author": "Ivan Hristov",
+  "license": "MIT",
+  "scripts": {
+    "server": "node src/index.js",
+    "test": "jest tests",
+    "coverage": "jest --collectCoverage"
+  },
+  "dependencies": {
+    "apollo-server": "^2.13.0",
+    "graphql-tag": "^2.10.3",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.7"
+  },
+  "devDependencies": {
+    "apollo-server-testing": "^2.13.0",
+    "jest": "^26.0.1"
+  }
+}

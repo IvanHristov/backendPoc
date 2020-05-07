@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`queries contact  1`] = `
+Object {
+  "data": Object {
+    "contact": Object {
+      "email": "ih95@gmail.com",
+      "first_name": "ivan",
+      "id": "1",
+      "last_name": "hristov",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`queries contacts 1`] = `
+Object {
+  "data": Object {
+    "contacts": Array [
+      Object {
+        "email": "ih95@gmail.com",
+        "first_name": "ivan",
+        "id": "1",
+        "last_name": "hristov",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
