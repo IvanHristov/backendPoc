@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { ApolloServer } = require('apollo-server')
 const typeDefs = require('./typedefs')
 const resolvers = require('./resolvers')
@@ -11,6 +12,6 @@ const server = new ApolloServer({
   }
 })
 
-server.listen(4000).then(({ url }) => {
+server.listen(process.env.PORT || 4000).then(({ url }) => {
   console.log(`🚀 Server ready at ${url}`)
 })
