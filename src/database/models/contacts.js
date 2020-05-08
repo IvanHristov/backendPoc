@@ -4,11 +4,13 @@ const sequelize = require("../db").sequelize;
 const Users = sequelize.define(
   "contacts",
   {
-    first_name: {
+    firstName: {
       type: Sequelize.TEXT,
+      field: 'first_name',
     },
-    last_name: {
+    lastName: {
       type: Sequelize.TEXT,
+      field: 'last_name',
     },
     email: {
       type: Sequelize.TEXT,

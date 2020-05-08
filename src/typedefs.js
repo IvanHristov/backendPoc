@@ -3,21 +3,21 @@ const gql = require('graphql-tag')
 module.exports = gql`
   type Contact {
     id: ID!
-    first_name: String
-    last_name: String
+    firstName: String
+    lastName: String
     email: String
   }
 
   input NewContactInput {
-    first_name: String
-    last_name: String
+    firstName: String
+    lastName: String
     email: String
   }
 
   input ContactInput {
     id: ID
-    first_name: String
-    last_name: String
+    firstName: String
+    lastName: String
     email: String
   }
 
