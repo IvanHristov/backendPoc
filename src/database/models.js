@@ -15,10 +15,11 @@ const createModel = (table) => ({
     return await table.create(input);
   },
   async update(input, filter) {
-    return await table.update(input, {
+    const result = await table.update(input, {
       returning: true,
       where: filter,
-    })[1]
+    });
+    return result[1];
   },
   async delete(input) {
     const result = await this.findMany(input);

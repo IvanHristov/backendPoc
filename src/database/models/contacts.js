@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../db").sequelize;
 
-const Users = sequelize.define(
+const Contacts = sequelize.define(
   "contacts",
   {
     first_name: {
@@ -12,6 +12,9 @@ const Users = sequelize.define(
     },
     email: {
       type: Sequelize.TEXT,
+    },
+    company_id: {
+      type: Sequelize.BIGINT
     }
   },
   {
@@ -20,4 +23,4 @@ const Users = sequelize.define(
   }
 );
 
-module.exports = Users;
+module.exports = Contacts;
