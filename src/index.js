@@ -9,7 +9,7 @@ const server = new ApolloServer({
   resolvers,
   context() {
     return { ...db }
-  }
+  },
 })
 
 server.listen(process.env.PORT || 4000).then(({ url }) => {

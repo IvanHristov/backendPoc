@@ -31,5 +31,4 @@ module.exports = gql`
     updateContact(input: NewContactInput!, filter: ContactInput!): [Contact]!
     deleteContact(input: ContactInput!): [Contact]!
   }
-
 `

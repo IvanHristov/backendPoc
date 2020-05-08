@@ -1,21 +1,21 @@
 module.exports = {
   Query: {
     contacts(_, { input }, { models }) {
-      return models.Contacts.findMany(input);
+      return models.Contacts.findMany(input)
     },
     contact(_, { input }, { models }) {
-      return models.Contacts.findOne(input);
-    }
+      return models.Contacts.findOne(input)
+    },
   },
   Mutation: {
     createContact(_, { input }, { models }) {
-      return models.Contacts.create(input);
+      return models.Contacts.create(input)
     },
     updateContact(_, { input, filter }, { models }) {
-      return models.Contacts.update(input, filter);
+      return models.Contacts.update(input, filter)
     },
     deleteContact(_, { input }, { models }) {
-      return models.Contacts.delete(input);
-    }
-  }
+      return models.Contacts.delete(input)
+    },
+  },
 }
