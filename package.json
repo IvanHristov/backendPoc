@@ -9,7 +9,7 @@
     "server": "node src/index.js",
     "test": "jest tests",
     "coverage": "jest --collectCoverage",
-    "format": "prettier \"src/*\" --write",
+    "format": "prettier \"src/**\" --write",
     "lint": "eslint \"src/*\" --quiet"
   },
   "dependencies": {

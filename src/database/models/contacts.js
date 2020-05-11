@@ -1,8 +1,8 @@
-const Sequelize = require("sequelize");
-const sequelize = require("../db").sequelize;
+const Sequelize = require('sequelize')
+const sequelize = require('../db').sequelize
 
 const Users = sequelize.define(
-  "contacts",
+  'contacts',
   {
     first_name: {
       type: Sequelize.TEXT,
@@ -12,12 +12,12 @@ const Users = sequelize.define(
     },
     email: {
       type: Sequelize.TEXT,
-    }
+    },
   },
   {
     timestamps: false,
-    freezeTableName: true
+    freezeTableName: true,
   }
-);
+)
 
-module.exports = Users;
+module.exports = Users

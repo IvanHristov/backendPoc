@@ -20,11 +20,11 @@
 //     }
 //   }
 // })
-const contacts = require('./models/contacts');
+const contacts = require('./models/contacts')
 const createModel = require('./models')
 
 module.exports = {
   models: {
-    Contacts: createModel(contacts)
-  }
+    Contacts: createModel(contacts),
+  },
 }
