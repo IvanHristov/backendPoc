@@ -54,4 +54,9 @@ module.exports = gql`
     deleteCompany(input: CompanyInput!): [Company]!
   }
 
+  type Subscription {
+    contactCreated: Contact!
+    contactUpdated: Contact!
+    contactDeleted: Contact!
+  }
 `
