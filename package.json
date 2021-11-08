@@ -11,7 +11,7 @@
     "coverage": "jest --collectCoverage"
   },
   "dependencies": {
-    "apollo-server": "^2.13.0",
+    "apollo-server": "^2.25.3",
     "graphql-tag": "^2.10.3",
     "pg": "^8.0.3",
     "pg-hstore": "^2.3.3",
